@@ -15,6 +15,9 @@ experiment.html
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script>
+        sessionStorage.setItem("buttonClicks", "2"); </script> <!--Sets global variable for use later in code-->
     <style>
     
     .button1 {
@@ -47,19 +50,20 @@ experiment.html
     <h1>
         Experiment
     </h1>
-    <h2>
-        Question 1/10
+    <h2 id="questionHeader">
+        Question 1/21
     </h2>
     
-    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/smiley-face-cute-grinning-with-smiling-eyes-and-happy-face-dogboo.jpg" height="225" width="200" alt="data visualization"><br><br>
-​
+    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/smiley-face-cute-grinning-with-smiling-eyes-and-happy-face-dogboo.jpg" height="225" width="200" alt="data visualization" id = "dataViz"><br><br>​
+    <!--change to first dataviz image-->
     <form>
         Text Field</br>
         <input type="text" name="testfield">
-        <button>Submit</button>
+        <script src = "button_imp/button_script.js"></script>
+        <button onclick="pageChanger()" type = "button" id="formButton">Submit</button>
     </form><br>
     
     <a href="intro.html" class="button1">Previous Page</a>
-    <a href="thanks.html" class="button2">Thank you</a>
+    <a href="thank.html" class="button2">Thank you</a>
 </body>
 </html>
