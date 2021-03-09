@@ -1,9 +1,8 @@
-experiment.html
 <!doctype html>
 <html>
+
 <head>
     <title>Experiment</title>
-    <span id="progress">1</span> /10
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -17,53 +16,52 @@ experiment.html
         crossorigin="anonymous"></script>
 
     <script>
-        sessionStorage.setItem("buttonClicks", "2"); </script> <!--Sets global variable for use later in code-->
+        sessionStorage.setItem("buttonClicks", "2");</script>
+    <!--Sets global variable for use later in code-->
     <style>
-    
-    .button1 {
-        background-color: red;
-        color: white;
-        padding: 5px 12px;
-        float: left;
-    }
-​
-    .button1:hover {
-        text-decoration: none;
-        color: white;
-    }
-​
-    .button2 {
-        background-color: red;
-        color: white;
-        padding: 5px 12px;
-        float: right;
-    }
-    
-    .button2:hover {
-        text-decoration: none;
-        color: white;
-    }
-    
+        .button1 {
+            background-color: red;
+            color: white;
+            padding: 5px 12px;
+            float: left;
+        }
+
+        ​ .button1:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        ​ .button2 {
+            background-color: red;
+            color: white;
+            padding: 5px 12px;
+            float: right;
+        }
+
+        .button2:hover {
+            text-decoration: none;
+            color: white;
+        }
     </style>
 </head>
+
 <body class="container">
-    <h1>
-        Experiment
-    </h1>
     <h2 id="questionHeader">
         Question 1/21
     </h2>
-    
-    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/smiley-face-cute-grinning-with-smiling-eyes-and-happy-face-dogboo.jpg" height="225" width="200" alt="data visualization" id = "dataViz"><br><br>​
+
+    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/smiley-face-cute-grinning-with-smiling-eyes-and-happy-face-dogboo.jpg"
+        height="225" width="200" alt="data visualization" id="dataViz"><br><br>​
     <!--change to first dataviz image-->
     <form>
         Text Field</br>
         <input type="text" name="testfield">
-        <script src = "button_imp/button_script.js"></script>
-        <button onclick="pageChanger()" type = "button" id="formButton">Submit</button>
+        <script src="button_imp/button_script.js"></script>
+        <button onclick="pageChanger()" type="button" id="formButton">Submit</button>
     </form><br>
-    
+
     <a href="intro.html" class="button1">Previous Page</a>
     <a href="thank.html" class="button2">Thank you</a>
 </body>
+
 </html>
