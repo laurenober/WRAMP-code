@@ -28,7 +28,8 @@
     <div id="arc-vis" style="margin: 15px; margin-left: 20px;"></div>
     <script>
         // Data
-        var value = 0.2
+        var value = 1
+
         // var text = Math.round(value * 100) + '%'
         var data = [value, 1 - value]
 
@@ -39,7 +40,7 @@
         var thickness = 80
         // Utility 
         //     var colors = d3.scale.category10();
-        var colors = ["#5EBBF8", "#F5F5F5"] // Change colors
+        var colors = ["#2c7fb8", "#fa9fb5"] // Change colors
 
         var pies = d3.layout.pie()
             .value(d => d)
