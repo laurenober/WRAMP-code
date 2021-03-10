@@ -9,7 +9,7 @@ function pageChanger(){
     switch(buttonNum){
         case 2:
             document.getElementById("questionHeader").innerHTML = "Question 2/21";
-            document.getElementById("imgClickAndChange").src = "arc-20.png";
+            document.getElementById("imgClickAndChange").src = "https://raw.githubusercontent.com/laurenober/WRAMP-code/main/images/arc-0.png"; //actually arc 20
             sessionStorage.setItem("buttonClicks", "3")
             break;
         case 3:
