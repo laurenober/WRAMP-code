@@ -9,37 +9,37 @@ function pageChanger(){
     switch(buttonNum){
         case 2:
             document.getElementById("questionHeader").innerHTML = "Question 2/21";
-            //document.getElementById("imgClickAndChange").src = "data2";
+            document.getElementById("imgClickAndChange").src = "arc-20.png";
             sessionStorage.setItem("buttonClicks", "3")
             break;
         case 3:
             document.getElementById("questionHeader").innerHTML = "Question 3/21";
-            //document.getElementById("imgClickAndChange").src = "data3";
+            //document.getElementById("imgClickAndChange").src = "/Users/laurenober/Documents/GitHub/WRAMP-code/images/arc-70.png";
             sessionStorage.setItem("buttonClicks", "4")
             break;
         case 4:
             document.getElementById("questionHeader").innerHTML = "Question 4/21";
-            //document.getElementById("imgClickAndChange").src = "data4";
+            //document.getElementById("imgClickAndChange").src = "/Users/laurenober/Documents/GitHub/WRAMP-code/images/arc-45.png";
             sessionStorage.setItem("buttonClicks", "5")
             break;
         case 5:
             document.getElementById("questionHeader").innerHTML = "Question 5/21";
-            //document.getElementById("imgClickAndChange").src = "data5";
+            //document.getElementById("imgClickAndChange").src = "/Users/laurenober/Documents/GitHub/WRAMP-code/images/arc-0.png";
             sessionStorage.setItem("buttonClicks", "6")
             break;
         case 6:
             document.getElementById("questionHeader").innerHTML = "Question 6/21";
-            //document.getElementById("imgClickAndChange").src = "data6";
+            //document.getElementById("imgClickAndChange").src = "/Users/laurenober/Documents/GitHub/WRAMP-code/images/arc-25.png";
             sessionStorage.setItem("buttonClicks", "7")
             break;
         case 7:
             document.getElementById("questionHeader").innerHTML = "Question 7/21";
-            //document.getElementById("imgClickAndChange").src = "data7";
+            //document.getElementById("imgClickAndChange").src = "/Users/laurenober/Documents/GitHub/WRAMP-code/images/arc-85.png";
             sessionStorage.setItem("buttonClicks", "8")
             break;
         case 8:
             document.getElementById("questionHeader").innerHTML = "Question 8/21";
-            //document.getElementById("imgClickAndChange").src = "data8";
+            //document.getElementById("imgClickAndChange").src = "";
             sessionStorage.setItem("buttonClicks", "9")
             break;
         case 9:
