@@ -1,7 +1,22 @@
 /*
-    TODO: update the image source code with the actual file names of your data viz
     add in code pushing information to database
 */
+var firebaseConfig = {
+    apiKey: "AIzaSyAq-BWyAhZzAtqJHQhoy6s79tGHFMLaKBk",
+    authDomain: "wramp-db.firebaseapp.com",
+    projectId: "wramp-db",
+    storageBucket: "wramp-db.appspot.com",
+    messagingSenderId: "236925835989",
+    appId: "1:236925835989:web:25f2921cd40327d7b4e05c"
+}; //code needed to set up the data base in any area that it is being used
+
+function generateSessionID() {
+    const d = new Date();
+    const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const m = month[d.getMonth()]
+    return m + d.getDate() + "-" + d.getHours() + d.getMinutes() + "-" + d.getSeconds() + d.getMilliseconds()
+} //generates the session id
+
 
 function pageChanger(){
     

@@ -15,6 +15,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script> <!--these lines are needed to make the database run-->
     <script>
         sessionStorage.setItem("buttonClicks", "2");</script>
     <!--Sets global variable for use later in code-->
@@ -55,9 +57,12 @@
         height="225" width="200" alt="data visualization" id="imgClickAndChange"><br><br>​
     <!--change to first dataviz image-->
     <form>
-        Text Field</br>
-        <input type="text" name="testfield">
-        <script src="button_imp/button_script.js"></script>
+        Text Field</br> <!-- prob edit text here-->
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="" id="textAnswer"></textarea>
+        </div>
+        <!--<input type="text" name="testfield">
+        <script src="button_imp/button_script.js"></script>-->
         <button onclick="pageChanger()" type="button" id="formButton">Submit</button>
     </form><br>
 
