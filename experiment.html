@@ -22,29 +22,18 @@
         sessionStorage.setItem("buttonClicks", "2");</script>
     <!--Sets global variable for use later in code-->
     <style>
-        .button1 {
+        .button {
             background-color: red;
             color: white;
             padding: 5px 12px;
             float: left;
         }
 
-        ​ .button1:hover {
+        ​ .button:hover {
             text-decoration: none;
             color: white;
         }
 
-        ​ .button2 {
-            background-color: red;
-            color: white;
-            padding: 5px 12px;
-            float: right;
-        }
-
-        .button2:hover {
-            text-decoration: none;
-            color: white;
-        }
     </style>
 </head>
 
@@ -64,11 +53,8 @@
         </div>
         <!--<input type="text" name="testfield">
         <script src="button_imp/button_script.js"></script>-->
-        <button onclick="pageChanger()" type="button" id="formButton">Submit</button>
+        <button onclick="pageChanger()" type="button" id="formButton" class="button">Submit</button>
     </form><br>
-
-    <a href="intro.html" class="button1">Previous Page</a>
-    <a href="thank.html" class="button2">Thank you</a>
 </body>
 
 </html>
