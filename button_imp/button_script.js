@@ -2,13 +2,14 @@
     add in code pushing information to database
 */
 var firebaseConfig = {
-    apiKey: "AIzaSyAq-BWyAhZzAtqJHQhoy6s79tGHFMLaKBk",
-    authDomain: "wramp-db.firebaseapp.com",
-    projectId: "wramp-db",
-    storageBucket: "wramp-db.appspot.com",
-    messagingSenderId: "236925835989",
-    appId: "1:236925835989:web:25f2921cd40327d7b4e05c"
-}; //code needed to set up the data base in any area that it is being used
+    apiKey: "AIzaSyBS-U6WvAupP1MiyAbZSFSRHfCFfZpQ0k0",
+    authDomain: "wramp-2.firebaseapp.com",
+    projectId: "wramp-2",
+    storageBucket: "wramp-2.appspot.com",
+    messagingSenderId: "61596005540",
+    appId: "1:61596005540:web:6dc4ebc53b349004aea231",
+    measurementId: "G-0JDJCG8PX7"
+  }; //code needed to set up the data base in any area that it is being used
 
 function generateSessionID() {
     const d = new Date();
@@ -17,6 +18,22 @@ function generateSessionID() {
     return m + d.getDate() + "-" + d.getHours() + d.getMinutes() + "-" + d.getSeconds() + d.getMilliseconds()
 } //generates the session id
 
+function onClickStart(){ 
+    var sessionId= generateSessionID()
+    doc = {
+        sessionId: sessionId,
+        country: $('#country').val(),
+        language: $('#language').val(),
+        age: $('#age').val(), 
+        chart: "arc",
+    }
+    if (!firebase.apps.length){
+        firebase.initializeApp(firebaseConfig)
+    }
+    var DB= firebase.database()
+    fire.ref("sessions/"+sessionId).set(doc)
+    sessionStorage.setItem("demography", JSON.stringify(doc))
+}
 
 function pageChanger(){
     
