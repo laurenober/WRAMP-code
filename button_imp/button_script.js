@@ -35,8 +35,21 @@ function onClickStart(){
     sessionStorage.setItem("demography", JSON.stringify(doc))
 }
 
+function logAnswer(sessionID){
+    doc2 = {
+        value: 20, 
+        chart: "arc",
+        answer: "answer"
+    }
+    if (!firebase.apps.length){
+        firebase.initializeApp(firebaseConfig)
+    }
+    var DB= firebase.database()
+    fire.ref("sessions/"+sessionId).set(doc2)
+}
+
 function pageChanger(){
-    
+    dem = JSON.parse(sessionStorage.getItem("demography"))
     const buttonNum = Number(sessionStorage.getItem("buttonClicks"));
     switch(buttonNum){
         case 2:
