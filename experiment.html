@@ -15,9 +15,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-        <script src="button_imp/button_script.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script> <!--these lines are needed to make the database run-->
+    <script src="button_imp/button_script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <!--these lines are needed to make the database run-->
     <script>
         sessionStorage.setItem("buttonClicks", "2");</script>
     <!--Sets global variable for use later in code-->
@@ -33,23 +34,36 @@
             text-decoration: none;
             color: white;
         }
-
     </style>
 </head>
 
 <body class="container">
-  
+
     <h2 id="questionHeader">
         Question 1/21
     </h2>
-<p>Explanation/instruction</p>
-    <img src="https://raw.githubusercontent.com/laurenober/WRAMP-code/main/images/arc-75.png"
-        height="225" width="200" alt="data visualization" id="imgClickAndChange"><br><br>​
+    <p>Imagine yourself participating in a game in which you pick a marble out of hat full of
+        colored marbles. Some marbles are pink, and the other marbles are blue. There are two outcomes in this game:
+        <br>
+        - if you draw a blue marble, you win, <br>
+        - but if you draw a pink marble, you lose. <br>
+    </p>
+    <p>In the arc graph, the blue section of the graph represents the proportion of blue
+        marbles in the hat. A quarter of the total number of marbles in the hat is blue. </p>
+
+    <img src="https://raw.githubusercontent.com/laurenober/WRAMP-code/main/images/arc-75.png" height="225" width="200"
+        alt="data visualization" id="imgClickAndChange"><br><br>​
     <!--change to first dataviz image-->
     <form>
-        Text Field</br> <!-- prob edit text here-->
+        <p>
+            <b>Your task: </b> For each question in this questionnaire, observe the visualization and describe
+            your chance of picking a blue marble and winning the game.
+            <br> Do <b>NOT</b> use numerical answer like<i> "The chance of drawing a blue marble is 25%"</i>. Instead,
+            use
+            familiar probability words and expressions to describe and communicate your chances.
+        </p>
         <div class="form-floating">
-            <textarea class="form-control" placeholder="" id="textAnswer"></textarea>
+            <textarea class="form-control" placeholder="" id="textAnswer" style="margin-bottom: 10px;"></textarea>
         </div>
         <!--<input type="text" name="testfield">
         <script src="button_imp/button_script.js"></script>-->
